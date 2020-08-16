@@ -1,0 +1,87 @@
+/* start general body style */
+* {
+    /* undo auto margin, padding and box sizing for everything on the page */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #F2EED8;
+    font-family: Helvetica, Arial, sans-serif;
+}
+/* end general body style */
+
+/* start header style */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    padding: 30px 0 5px 20px;
+    background-color: #8E56A6;
+}
+
+header a {
+    /* override default link styling for header elements */
+    text-decoration: none;
+    color: #F2EED8;
+}
+
+header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-end;
+    list-style: none;
+}
+
+header nav ul li a {
+    /* space around nav links */
+    margin: 0 20px;
+    /* use vw to make text size responsive */
+    font-size: 2vw;
+} 
+/* end header style */
+
+
+/* start general section style */
+section {
+    padding: 20px;
+    margin: 10px;
+    background-color: #F2B5A7;
+}
+
+.section-heading {
+    color: #F24968;
+}
+/* end general section style */
+
+
+/* start about section style */
+.about-me img{
+    /* keeps the image at 25% of the container's width */
+    width: 25%;
+}
+/* end about section style */
+
+
+/* start work section style */
+
+/* end work section style */
+
+
+/* start contact section style */
+.contact-info address {
+    font-style: normal;
+}
+
+.contact-info a {
+    text-decoration: none;
+}
+/* end contact section style */
+
+
+
+
+

@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8" />
-        <link rel="stylesheet" href="./assets/style.css"/>
+        <link rel="stylesheet" href="./assets/css/style.css"/>
         <title>Rachel Wagschal</title>
     </head>
 
@@ -28,19 +28,18 @@
         </header>
 
         <!-- About Section -->
-        <section id="about">
-            <!-- can/should i make this an <article> instead of a <div>? -->
-            <div class="flex-row">
-                <h2 class="section-heading">About Rachel</h2>
-                <img src=" " alt="Rachel Wagschal looking foine" />
-                <p>
-                    Lorem ipsum Rachel Wagschal tbd n/a she's busy right now. 
-                </p>
+        <section id="about" class="about-me">
+            <h2 class="section-heading">About Rachel</h2>
+            <div class="img">
+                <img src="./assets/images/about-me.jpg" alt="Rachel Wagschal looking foine" />
             </div>
+            <p>
+                Lorem ipsum Rachel Wagschal tbd n/a she's busy right now. 
+            </p>
         </section>
 
         <!-- Work Section -->
-        <section id="work">
+        <section id="work" class="my-work">
             <!-- maybe the whole section should be a flexbox... but do i have to make a separate div with a flex-row class instead of just adding the flex-row class to the section?-->
             <div class="flex-row">
                 <h2 class="section-heading">Rachel's Work</h2>
@@ -67,16 +66,14 @@
         </section>
 
         <!-- Contact Section -->
-        <section id="contact">
-            <div class="flex-row">
-                <h2 class="section-heading">Contact Rachel</h2>
-                <address>
-                    P: 949.395.0489 <br />
-                    E: <a href="mailto:rawagschal@gmail.com">rawagschal@gmail.com</a> <br />
-                    <a href="https://github.com/rawagschal">GitHub</a> <br />
-                    <a href="https://open.spotify.com/user/128271131" allowfullscreen>Spotify</a>
-                </address>
-            </div>
+        <section id="contact" class="contact-info">
+            <h2 class="section-heading">Contact Rachel</h2>
+            <address>
+                P: 949.395.0489 <br />
+                E: <a href="mailto:rawagschal@gmail.com">rawagschal@gmail.com</a> <br />
+                <a href="https://github.com/rawagschal">GitHub</a> <br />
+                <a href="https://open.spotify.com/user/128271131" allowfullscreen>Spotify</a>
+            </address>
         </section>
     </body>
 
