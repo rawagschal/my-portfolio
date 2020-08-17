@@ -55,7 +55,6 @@ section {
     display: flex;
     /* left indent and space out the sections */
     margin: 30px 20px 0 30px;
-    background-color: #F2B5A7;
 }
 
 .section-heading {
@@ -72,7 +71,7 @@ section {
     flex-direction: column;
     /* set the width as a ratio to whatever else is in the flexbox */
     flex: 1 25%;
-    padding-right: 10px;
+    padding-right: 20px;
 }
 /* end general section style */
 
@@ -91,24 +90,109 @@ section {
 /* start work section style */
 .grid-container {
     flex: 3 75%;
+    height: 300px; 
+    display: grid;
+    grid-auto-flow: column;
+    /* make 2 columns and three rows */
+    grid-template-columns: repeat(4, 2fr);
+    grid-template-rows: repeat(3, 1fr);
+    /* set padding between grid cells */
+    grid-gap: 15px;
 }
+    /* don't do background images bc everythings faded, do this instead: /* re: below : https://www.w3schools.com/css/tryit.asp?filename=trycss_css_image_overlay_opacity */
+    /* how we want the background images to show up in each grid item */
+.grid-item {
+    display: flex;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: 3px solid #F2B5A7;
+    opacity: 60%;
+    transition: .5s ease;
+}
+
+.grid-item:hover {
+    opacity: 30%;
+}
+    
+    /* set individual background images so that the text can overlay... i feel like there's a more efficient way to do this */
+.item-1 {
+    background-image: url(../images/project-1.png);
+    grid-row: 1 / span 3;
+    grid-column: 1 / span 2;
+}
+
+.item-2 {
+    background-image: url(../images/project-2.png);
+    grid-column: 3 / span 2;
+}
+
+.item-3 {
+    background-image: url(../images/project-3.jpg);
+    grid-row: 2 / span 1;
+    grid-column: 3 / span 2;
+}
+
+.item-4 {
+    background-image: url(../images/project-4.jpg);
+    grid-row: 3 / span 1;
+    grid-column: 3 / span 2;
+}
+
+.img-text {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 5px;
+    margin-top: auto;
+    background-color: #F2B5A7;
+    color: #F2EED8;
+    font-size: 1.5vw;
+    opacity: 100%;
+}
+
+
+
+/* .item-1 {
+    grid-row: 1 / span 3;
+    grid-column: 1 / span 2;
+}
+
+.item-2 {
+    grid-column: 3 / span 2;
+}
+
+.item-3 {
+    grid-row: 2 / span 1;
+    grid-column: 3 / span 2;
+}
+
+.item-4 {
+    grid-row: 3 / span 1;
+    grid-column: 3 / span 2;
+} */
+
+
 /* end work section style */
 
 
 /* start contact section style */
 .contact-info address {
     flex: 3 75%;
+    justify-items: center;
     font-style: normal;
 }
 
 .contact-info a {
     text-decoration: none;
+    padding: 10px 10px 3px 10px;
+    border-bottom: 3px solid #F2B5A7;
 }
 /* end contact section style */
 
 /* UTILITY CLASSES */
 .left-border {
     border-left: 3px solid #F24968;
-    padding-left: 10px;
+    padding-left: 20px;
 }
 
