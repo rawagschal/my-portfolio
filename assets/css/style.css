@@ -28,6 +28,10 @@ header a {
     color: #F2EED8;
 }
 
+header h1 {
+    font-size: 5vw;
+}
+
 header nav ul {
     display: flex;
     flex-wrap: wrap;
@@ -47,21 +51,35 @@ header nav ul li a {
 
 /* start general section style */
 section {
-    padding: 20px;
-    margin: 10px;
+    /* make all sections flexboxes */
+    display: flex;
+    /* left indent and space out the sections */
+    margin: 30px 20px 0 30px;
     background-color: #F2B5A7;
 }
 
 .section-heading {
     color: #F24968;
+    font-size: 3.5vw;
+    text-align: end;
+    /* can only see this in the about section bc of the picture */
+    padding-bottom: 10px;
+}
+
+.flex-column {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 25%;
+    padding-right: 10px;
 }
 /* end general section style */
 
 
 /* start about section style */
-.about-me img{
-    /* keeps the image at 25% of the container's width */
-    width: 25%;
+
+.about-me-img img {
+    width: 100%;
 }
 /* end about section style */
 
