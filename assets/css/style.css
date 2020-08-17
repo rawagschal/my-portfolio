@@ -99,7 +99,9 @@ section {
 }
 /* end contact section style */
 
-
-
-
+/* UTILITY CLASSES */
+.left-border {
+    border-left: 3px solid #F24968;
+    padding-left: 10px;
+}
 
