@@ -70,27 +70,34 @@ section {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    width: 25%;
+    /* set the width as a ratio to whatever else is in the flexbox */
+    flex: 1 25%;
     padding-right: 10px;
 }
 /* end general section style */
 
 
 /* start about section style */
-
 .about-me-img img {
     width: 100%;
+}
+
+.about-me p {
+    flex: 3 75% ;
 }
 /* end about section style */
 
 
 /* start work section style */
-
+.grid-container {
+    flex: 3 75%;
+}
 /* end work section style */
 
 
 /* start contact section style */
 .contact-info address {
+    flex: 3 75%;
     font-style: normal;
 }
 
