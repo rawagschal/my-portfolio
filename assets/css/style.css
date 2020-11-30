@@ -22,7 +22,7 @@ header {
     background-color: #8E56A6;
 }
 
-header a {
+a {
     /* override default link styling for header elements */
     text-decoration: none;
     color: #F2EED8;
@@ -131,8 +131,9 @@ section {
 }
 
 .item-2 {
-    background-image: url(../images/project-2.png);
-    grid-column: 3 / span 2;
+    background-image: url(../images/wantingsScreeshot.png);
+    grid-row: 1 / span 3;
+    grid-column: 3 / span 3;
 }
 
 .item-3 {
@@ -193,6 +194,7 @@ section {
 }
 
 .contact-info a {
+    color: #F24968;
     text-decoration: none;
     padding: 10px 10px 3px 10px;
     border-bottom: 3px solid #F2B5A7;
